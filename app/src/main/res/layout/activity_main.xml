@@ -32,7 +32,7 @@
     <EditText
         android:id="@+id/editText"
         android:layout_width="103dp"
-        android:layout_height="33dp"
+        android:layout_height="60dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="60dp"
         android:ems="10"
@@ -56,7 +56,7 @@
         android:id="@+id/imageView"
         android:layout_width="103dp"
         android:layout_height="111dp"
-
+        android:visibility="invisible"
         android:layout_marginStart="15dp"
         android:layout_marginTop="80dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +69,7 @@
         android:layout_height="33dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="40dp"
-
+        android:visibility="invisible"
         android:text="TextView"
         android:textSize="25dp"
         app:layout_constraintStart_toEndOf="@+id/textRandom3"
@@ -81,7 +81,7 @@
         android:layout_height="33dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="40dp"
-
+        android:visibility="invisible"
         android:text="TextView"
         android:textSize="25dp"
         app:layout_constraintStart_toEndOf="@+id/random12"
@@ -90,11 +90,11 @@
     <EditText
         android:id="@+id/edit_text_2"
         android:layout_width="103dp"
-        android:layout_height="33dp"
+        android:layout_height="60dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="60dp"
         android:ems="10"
-
+        android:visibility="invisible"
         android:inputType="numberSigned"
         app:layout_constraintStart_toEndOf="@+id/editText"
         app:layout_constraintTop_toBottomOf="@+id/textView_random_2" />
@@ -105,7 +105,7 @@
         android:layout_height="54dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="70dp"
-
+        android:visibility="invisible"
         android:layout_marginBottom="120dp"
         android:onClick="check2"
         android:text="check"
@@ -117,7 +117,7 @@
         android:id="@+id/imageView22"
         android:layout_width="103dp"
         android:layout_height="111dp"
-
+        android:visibility="invisible"
         android:layout_marginStart="25dp"
         android:layout_marginTop="80dp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -133,6 +133,7 @@
         android:layout_marginEnd="15dp"
         android:text="TextView"
         android:textSize="25dp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView_get_answer"
         app:layout_constraintTop_toTopOf="parent" />
@@ -146,9 +147,68 @@
         android:layout_marginEnd="15dp"
         android:text="TextView"
         android:textSize="25dp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView_random_2"
         app:layout_constraintTop_toBottomOf="@+id/textView_asnwer_3" />
+
+    <EditText
+        android:id="@+id/editText_3"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="15dp"
+        android:ems="10"
+        android:visibility="invisible"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_text_2"
+        app:layout_constraintTop_toBottomOf="@+id/text_random_3" />
+
+    <ImageView
+        android:id="@+id/imageView_33"
+        android:layout_width="103dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView22"
+        app:layout_constraintTop_toBottomOf="@+id/editText_3"
+        app:srcCompat="@drawable/ve" />
+
+    <Button
+        android:id="@+id/button33"
+        android:layout_width="103dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="120dp"
+        android:onClick="check3"
+        android:text="check"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button22"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_33" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:text="new"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button22" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
