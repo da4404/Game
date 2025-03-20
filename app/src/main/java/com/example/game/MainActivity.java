@@ -147,4 +147,46 @@ public class MainActivity extends AppCompatActivity {
             button4.setText(String.format("%d/3 (%.2f%%)", number_of_win, (number_of_win / 3.0) * 100));
         }
     }
-}
+
+    public void ristart(View view)
+    {
+        number1 = ra.nextInt(89) + 10;
+        number2 = ra.nextInt(89) + 10;
+        number3 = ra.nextInt(89) + 10;
+        number4 = ra.nextInt(89) + 10;
+
+        number_of_win = 0;
+
+        textView.setText(String.valueOf(number1));
+        textView2.setText(String.valueOf(number2));
+        textView_random_2.setText("");
+        text_random_3.setText("");
+        textView_get_answer.setText("");
+        textView_asnwer_3.setText("");
+
+        editText.setText("");
+        edit_text_2.setText("");
+        editText_3.setText("");
+
+        editText.setEnabled(true);
+        edit_text_2.setEnabled(true);
+        editText_3.setEnabled(true);
+
+        button11.setEnabled(true);
+        button22.setEnabled(true);
+        button33.setEnabled(true);
+        button4.setText("new");
+
+        imageView.setVisibility(View.INVISIBLE);
+        imageView22.setVisibility(View.INVISIBLE);
+        imageView_33.setVisibility(View.INVISIBLE);
+
+        button22.setVisibility(View.INVISIBLE);
+        button33.setVisibility(View.INVISIBLE);
+
+        edit_text_2.setVisibility(View.INVISIBLE);
+        editText_3.setVisibility(View.INVISIBLE);
+
+    }
+    }
+
